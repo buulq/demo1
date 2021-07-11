@@ -9,3 +9,5 @@
 }
 
 30 18 * * * /usr/sbin/logrotate -v /etc/logrotate.d/joblogs
+
+11 11 * * * /usr/sbin/logrotate -v /etc/logrotate.d/joblogs
