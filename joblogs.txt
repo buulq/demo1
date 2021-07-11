@@ -1,0 +1,11 @@
+/iTraMS/LOGS/*.log {
+    missingok
+    notifempty
+    size 100M
+    copytruncate #truncate the original log file in place after creating a copy
+    compress
+    rotate 10
+    dateext
+}
+
+30 18 * * * /usr/sbin/logrotate -v /etc/logrotate.d/joblogs
